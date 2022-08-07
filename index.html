@@ -1,0 +1,124 @@
+<!--Find your web portfolio Website-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Indie+Flower&family=Josefin+Sans&display=swap" rel="stylesheet">
+        <title>Encriptador de Texto</title>
+    </head>
+    <body>
+      <!--Barratop-->
+        <header>
+            <div class="barratop">
+                <img src="img/logo.png">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="apuntes">
+    <!--Estilo consola-->
+        <div class="card">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <center>
+              <h1>ENCRIPTADOR DE TEXTO</h1>
+            </center>
+              <!--Codigo encriptador-->
+            
+                <div class="encriptador_input">
+                  <center>
+                    <h2>Ingrese texto a encriptar o desencriptar</h2>
+                  </center>
+                  <br>
+                  <textarea class="input" id="inputTexto" cols="30" rows="10"
+                    placeholder="Ingrese texto a encriptar o desencriptar" onchange="generarTexto()"></textarea>
+                  <div style="display: flex; justify-content: space-between">
+                    <button class="boton" id="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton" id="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                  </div>
+                  <div class="encriptador_bloque">
+                    <div class="encriptador_output">
+                      <center>
+                        <h2>Resultado de texto encriptado o desenciptado</h2>
+                      </center>
+                      <br>
+                      <textarea class="output" id="conTexto" cols="30" rows="10" placeholder="Texto encriptado" readonly></textarea>
+                      <textarea class="output" id="sinTexto" cols="30" rows="10" placeholder="Aquí no hay nada" readonly></textarea>
+                      <center>
+                        <button class="boton" onclick="copiar()" id="botonCopiar">Copiar</button>
+                      </center>
+                    </div>
+                </div>
+              </div>
+            
+            <script src="js/encriptado.js"></script>
+          </div>
+        </div>
+      <!-- Estilo notas-->      
+        
+        <div class="nota">
+          <h2># NOTA 1:</h2>
+          <div class="notacontent">
+            <br>
+            <p>Challenge Proyecto</p>
+            <br>
+            <p>Alura latam</p>
+            <br>
+            <p>Oracle Next Education</p>
+            <br>
+            <P>Encriptador de Texto</P>
+          </div>
+        </div>
+       
+        <div class="nota2">
+          <h2># NOTA 2:</h2>
+          <div class="notacontent">
+            <br>
+            <p>Escriba su mensaje para que sea encriptado y la persona con acceso a esta pagina podra desifrar su mensaje.</p>
+          </div>
+        </div>
+        
+        <div class="nota3">
+          <h2># NOTA 3:</h2>
+          <div class="notacontent">
+            <br>
+            <p>Soy Bastian Landskron, en este proyecto presento lo aprendido en los cursos de ALURA | ORACLE | ONENEXTEDUCATION</p>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+
+        <footer>
+          <br>
+          <center>
+              <img src="img/logo.png">
+              <p class="copyright">&copy Copyright Find Your Web - 2022.</p>
+              <br>
+          </center>
+        </footer>
+    </body>
+</html>
