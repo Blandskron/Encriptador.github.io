@@ -1,0 +1,258 @@
+/*barratop*/
+.barratop{
+    position: fixed;
+    background-color: #202020;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.barratop img{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 65px;
+    float: left;
+}
+.barratop nav li{
+    display: inline;
+}
+.barratop ul{
+    text-align: right;
+    margin-right: 50px;
+}
+.barratop li a{
+    font-family: 'BhuTuka Expanded One', cursive;
+    padding: 10px;
+    margin-top: 15px;
+    float: right;
+    text-transform: uppercase;
+    color: #F8FBFE;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+.barratop li a:hover{
+    color: #efb810;
+}
+
+/*body*/
+body{
+    background-color: #3b3b3b;
+}
+.card {
+    float: left;
+    width: 80%;
+    height: 700px;
+    margin: 120px;
+    margin-left: 40px;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 980px) {
+    .card {
+        height: auto;
+    }
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+.circle {
+    padding: 0 4px;
+}
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+.red {
+    background-color: #ff605c;
+}
+.yellow {
+    background-color: #ffbd44;
+}
+.green {
+    background-color: #00ca4e;
+}  
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+}
+p{
+    font-family: 'Indie Flower', cursive;
+}
+.codigo{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+/*nota*/
+.nota{
+    float: right;
+    margin-top: -790px;
+    margin-right: 30px;
+    text-decoration:none;
+    color:#000;
+    background:rgb(225, 225, 68);
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+.nota:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 980px) {
+    div.nota {
+    display: none;
+    }
+}
+.nota2{
+    float: right;
+    margin-top: -570px;
+    margin-right: 30px;
+    text-decoration:none;
+    color:#000;
+    background:rgb(225, 68, 149);
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+.nota2:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 980px) {
+    div.nota2 {
+    display: none;
+    }
+}
+
+.nota3{
+    float: right;
+    margin-top: -350px;
+    margin-right: 30px;
+    text-decoration:none;
+    color:#000;
+    background:rgb(127, 229, 43);
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+.nota3:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 980px) {
+    div.nota3 {
+    display: none;
+    }
+}
+/*Encriptador*/
+.encriptador_output {
+    padding: 25px 40px;
+}
+
+.encriptador_input {
+    padding: 25px 40px;
+}
+
+.input {
+    width: 100%;
+    height: 180px;
+    background-color: #3b3b3b;
+    color: #F8FBFE;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.output {
+    width: 100%;
+    height: 180px;
+    background-color: #3b3b3b;
+    color: #F8FBFE;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton {
+    
+    width: 50%;
+    padding: 0.5rem 1rem;
+    background-color: #202020;
+    color: #F8FBFE;
+    border-radius: 0.8em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: #efb810;
+    color: #202020;
+}
+
+textarea {
+    resize: none;
+}
+
+@media screen and (max-width: 980px) {
+    .encriptador_bloque {
+        grid-template-columns: 1fr;
+    }
+
+    .encriptador_output {
+        margin-bottom: 20%;
+        height: 60%;
+    }
+}
+
+/*footer*/
+footer{
+    margin-top: 820px;
+    background-color: #2b2b2b;
+}
+footer img{
+    width: 70px;
+}
+.copyright{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #F8FBFE;
+    padding: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    footer {
+        margin-top: 970px;
+    }
+}
